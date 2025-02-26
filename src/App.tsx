@@ -85,7 +85,6 @@ const App = () => {
       setError("Failed to get flower info.");
     }
   };
-  // Add this mapping constant inside your component (or above it) to translate keys.
   const vietnameseLabels: { [key: string]: string } = {
     name: "Tên",
     appearance: "Ngoại hình",
@@ -95,7 +94,6 @@ const App = () => {
     symbolismAndUses: "Biểu tượng và công dụng",
     biologicalCharacteristics: "Đặc điểm sinh học",
     sampleImageUrl: "Ảnh mẫu",
-    // Sub-attributes
     commonName: "Tên thường gọi",
     scientificName: "Tên khoa học",
     localName: "Tên địa phương",
@@ -253,7 +251,7 @@ const App = () => {
           );
         })}
       </div>
-      {/* Enlarged Modal for displaying flower info as a structured table */}
+
       {flowerInfo && (
         <div className="fixed inset-0 flex  items-center justify-center bg-black bg-opacity-50 p-4">
           <div className="bg-white p-6 rounded-xl w-full max-w-3xl max-h-full overflow-auto">
